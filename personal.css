@@ -1,0 +1,200 @@
+/* ===================
+   GLOBAL STYLES
+=================== */
+body {
+    font-family: 'Monokai', sans-serif;
+    margin: 0;
+    background-color: mistyrose;
+    color: maroon;
+}
+
+/* HEADER */
+header {
+    background-color: lightpink;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: seashell;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===================
+   PINK BOX SECTIONS
+=================== */
+.pink-box {
+    background-color: #fff0f5; /* soft pink */
+    margin: 40px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADINGS */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* LISTS */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    background-color: #ffe4ec; /* slightly darker pink for items */
+    margin: 10px auto;
+    padding: 12px 18px;
+    border-radius: 12px;
+    width: 60%;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+/* CONTACT LINKS */
+ul li a {
+    color: maroon;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.image-box img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.image-center {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    gap: 10px;              /* space between image and buttons */
+    margin: 20px 0;
+}
+
+.audio-top {
+    text-align: center;  /* center the audio player */
+    padding: 10px;
+    background-color: #fff0f5; /* optional: match pink vibe */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* optional soft shadow */
+}
+
+
+/* Polaroid Style */
+.polaroid {
+    background-color: white;
+    width: 260px;
+    padding: 15px 15px 25px;
+    margin: 25px auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.polaroid-text {
+    margin-top: 12px;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: maroon;
+    margin: 5px 0;
+}
+
+.song-artist {
+    font-size: 15px;
+    font-style: italic;
+    color: #7a2d2d;
+}
+
+.hint {
+    text-align: center;
+    font-size: 14px;
+    color: maroon;
+}
+
+/* Force landscape / horizontal layout */
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* allows wrap on smaller screens */
+}
+
+
+/* FOOTER */
+footer {
+    background-color: lightpink;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fade 2s;
+}
+
+.slide-in {
+    animation: slide 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
