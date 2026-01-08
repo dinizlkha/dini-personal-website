@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+
+<header class="fade-in">
+    <h1>Welcome to My Website</h1>
+    <p class="italic">Get to know Dini Zulaikha</p>
+</header>
+
+<nav>
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="favorite.html">Favorite</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="fade-in">
+    <h2>My Gallery</h2>
+    <div class="gallery">
+        <img src="image/dini_1.jpg" width="250" height="200">
+        <img src="image/dini_2.jpg" width="250" height="200">
+        <img src="image/dini_4.jpg" width="250" height="200">
+        <img src="image/dini_5.jpg" width="250" height="200">
+    </div>
+</section>
+
+<script>
+function myImage(a)
+{
+    var pict;
+    if (a==1)
+        pict="image/baby_dini.jpg";
+    else
+        pict="image/dini_3.jpg";
+
+    document.getElementById("gambar").src=pict;
+}
+</script>
+
+<div class="image-center">
+
+<img src="image/baby_dini.jpg" width="300" height="550" id="gambar">
+
+<p>
+    <button onclick="myImage(1)">Baby Dini</button>
+    <button onclick="myImage(2)">Grown Up Dini</button>
+</p>
+
+    <video width="500" height="300" controls>
+        <source src="animation/dini_vid.mp4" type="video/mp4">
+            Your browser does not support video element
+    </video>
+
+<footer>
+    <p>© 2025 Dini | IMD318 Personal Website</p>
+</footer>
+
+</body>
+</html>
